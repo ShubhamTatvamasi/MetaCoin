@@ -2,7 +2,11 @@
 
 Install Truffle
 ```
-npm install truffle -g
+npm i
 ```
 
+To Deploy on rinkeby network
+```
+npm run rinkeby
+```
 

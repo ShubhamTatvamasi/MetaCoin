@@ -1,3 +1,6 @@
+const HDWalletProvider = require("truffle-hdwallet-provider");
+const mnemonic = "model jar shed wall faint security surge script great glove find book";
+
 module.exports = {
   
   networks: {
@@ -8,11 +11,12 @@ module.exports = {
     },
 
     rinkeby: {
-      host: "localhost", // Connect to geth on the specified
-      port: 8545,
-      from: "0x52C3a9B0f293CaC8C1bAAbE5B62524A71211a616", // default address to use for any transaction Truffle makes during migrations
+      provider: function() {
+        return new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/")
+      },
       network_id: 4,
-      gas: 4612388 // Gas limit used for deploys
+      gas: 4500000,
+      gasPrice: 10000000000
     }
   },
 

@@ -10,7 +10,8 @@
     "test": "truffle test",
     "compile": "truffle compile",
     "migrate": "truffle migrate",
-    "networks": "truffle networks"
+    "networks": "truffle networks",
+    "rinkeby": "truffle migrate --network rinkeby"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/ShubhamTatvamasi/MetaCoin#README.md",
   "devDependencies": {
-    "truffle": "^5.0.6"
+    "truffle": "^5.0.6",
+    "truffle-hdwallet-provider": "^1.0.5"
   }
 }
