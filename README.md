@@ -4,6 +4,11 @@ Install ganache for local blockchain development
 
 https://truffleframework.com/ganache
 
+It integrates with Truffle, an Ethereum development environment. Please install Truffle.
+```
+npm install -g truffle
+```
+
 Install NPM Packages
 ```
 npm i
