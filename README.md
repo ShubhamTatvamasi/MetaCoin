@@ -10,7 +10,7 @@ npm i
 ```
 ---
 
-Start ganache, in setting port should be 8545
+Start ganache, in setting your port should be `8545`
 
 To test to Contract
 ```
