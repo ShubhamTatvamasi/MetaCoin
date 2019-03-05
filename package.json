@@ -7,7 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "networks": "truffle networks"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/ShubhamTatvamasi/MetaCoin/issues"
   },
-  "homepage": "https://github.com/ShubhamTatvamasi/MetaCoin#README.md"
+  "homepage": "https://github.com/ShubhamTatvamasi/MetaCoin#README.md",
+  "devDependencies": {
+    "truffle": "^5.0.6"
+  }
 }
