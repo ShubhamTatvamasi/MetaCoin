@@ -36,3 +36,4 @@ To Deploy on rinkeby network
 npm run rinkeby
 ```
 > If you want to use your own address, change the `mnemonic` value in *truffle-config.js* 
+
