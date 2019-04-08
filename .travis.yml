@@ -7,6 +7,13 @@ install:
   - npm install 
 
 script:
-  - ganache-cli &
-  - truffle test
+  # - ganache-cli &
+  - npm test
   # - npm run test:coveralls
+
+before_script:
+  - testrpc > /dev/null &
+  - sleep 5
+
+after_script:
+  - npm run coverage && cat coverage/lcov.info | coveralls
