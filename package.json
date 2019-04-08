@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "truffle test",
+    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "compile": "truffle compile",
     "migrate": "truffle migrate",
     "networks": "truffle networks",
@@ -24,6 +25,8 @@
   },
   "homepage": "https://github.com/ShubhamTatvamasi/MetaCoin#readme",
   "devDependencies": {
+    "coveralls": "^3.0.3",
+    "ganache-cli": "^6.4.2",
     "truffle": "^5.0.6",
     "truffle-hdwallet-provider": "^1.0.5"
   }
