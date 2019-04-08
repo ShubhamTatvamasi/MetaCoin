@@ -17,7 +17,7 @@ contract MetaCoin {
   }
 
   function sendCoin(address receiver, uint amount) public returns(bool sufficient) {
-    require(balances[msg.sender] >= amount);
+    require(balances[msg.sender] >= amount, "You don't have enough balance!!");
     balances[msg.sender] -= amount;
     balances[receiver] += amount;
     emit Transfer(msg.sender, receiver, amount);

@@ -28,12 +28,11 @@
   "homepage": "https://github.com/ShubhamTatvamasi/MetaCoin#readme",
   "devDependencies": {
     "coveralls": "^3.0.3",
+    "ethlint": "^1.2.4",
     "ganache-cli": "^6.4.2",
     "solidity-coverage": "^0.5.11",
-    "truffle": "^5.0.6",
-    "truffle-hdwallet-provider": "^1.0.5"
+    "truffle": "^5.0.11",
+    "truffle-hdwallet-provider": "^1.0.6"
   },
-  "dependencies": {
-    "ethlint": "^1.2.4"
-  }
+  "dependencies": {}
 }
