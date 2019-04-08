@@ -6,14 +6,13 @@ node_js:
 install:
   - npm install 
 
-script:
-  # - ganache-cli &
-  - npm test
-  # - npm run test:coveralls
-
 before_script:
-  - testrpc > /dev/null &
+  - ganache-cli > /dev/null &
   - sleep 5
+
+script:
+  - npm test
 
 after_script:
   - npm run coverage && cat coverage/lcov.info | coveralls
+  
