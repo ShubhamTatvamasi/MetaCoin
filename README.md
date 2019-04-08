@@ -1,5 +1,9 @@
 # MetaCoin
 
+[![Build Status](https://travis-ci.org/ShubhamTatvamasi/MetaCoin.svg?branch=master)](https://travis-ci.org/ShubhamTatvamasi/MetaCoin)
+
+[![Coverage Status](https://coveralls.io/repos/github/ShubhamTatvamasi/MetaCoin/badge.svg?branch=master)](https://coveralls.io/github/ShubhamTatvamasi/MetaCoin?branch=master)
+
 Install ganache for local blockchain development
 
 https://truffleframework.com/ganache
