@@ -12,7 +12,9 @@
     "compile": "truffle compile",
     "migrate": "truffle migrate",
     "networks": "truffle networks",
-    "rinkeby": "truffle migrate --network rinkeby"
+    "rinkeby": "truffle migrate --network rinkeby",
+    "solium": "solium -d .",
+    "solium:fix": "solium -d . --fix"
   },
   "repository": {
     "type": "git",
@@ -30,5 +32,8 @@
     "solidity-coverage": "^0.5.11",
     "truffle": "^5.0.6",
     "truffle-hdwallet-provider": "^1.0.5"
+  },
+  "dependencies": {
+    "ethlint": "^1.2.4"
   }
 }
