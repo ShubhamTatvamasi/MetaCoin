@@ -27,6 +27,7 @@
   "devDependencies": {
     "coveralls": "^3.0.3",
     "ganache-cli": "^6.4.2",
+    "jest": "^24.7.1",
     "truffle": "^5.0.6",
     "truffle-hdwallet-provider": "^1.0.5"
   }
