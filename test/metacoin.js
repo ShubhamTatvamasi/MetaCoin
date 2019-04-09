@@ -37,34 +37,34 @@ contract('MetaCoin', (accounts) => {
     assert.equal(accountOneEndingBalance, accountOneStartingBalance - amount, "Amount wasn't correctly taken from the sender");
     assert.equal(accountTwoEndingBalance, accountTwoStartingBalance + amount, "Amount wasn't correctly sent to the receiver");
   });
-  // it('should fail in sending coins', async () => {
-  //   const metaCoinInstance = await MetaCoin.deployed();
+  it('should fail in sending coins', async () => {
+    const metaCoinInstance = await MetaCoin.deployed();
 
-  //   // Setup 2 accounts.
-  //   const accountOne = accounts[0];
-  //   const accountTwo = accounts[1];
+    // Setup 2 accounts.
+    const accountOne = accounts[0];
+    const accountTwo = accounts[1];
 
-  //   // Get initial balances of first and second account.
-  //   const accountOneStartingBalance = (await metaCoinInstance.getBalance.call(accountOne)).toNumber();
-  //   const accountTwoStartingBalance = (await metaCoinInstance.getBalance.call(accountTwo)).toNumber();
+    // Get initial balances of first and second account.
+    const accountOneStartingBalance = (await metaCoinInstance.getBalance.call(accountOne)).toNumber();
+    const accountTwoStartingBalance = (await metaCoinInstance.getBalance.call(accountTwo)).toNumber();
 
-  //   // Make transaction from first account to second.
-  //   const amount = 10000;
+    // Make transaction from first account to second.
+    const amount = 10000;
 
-  //   try {
+    try {
 
-  //     await metaCoinInstance.sendCoin(accountTwo, amount, { from: accountOne });
+      await metaCoinInstance.sendCoin(accountTwo, amount, { from: accountOne });
 
-  //   } catch {
+    } catch {
   
-  //     // Get balances of first and second account after the transactions.
-  //     const accountOneEndingBalance = (await metaCoinInstance.getBalance.call(accountOne)).toNumber();
-  //     const accountTwoEndingBalance = (await metaCoinInstance.getBalance.call(accountTwo)).toNumber();
+      // Get balances of first and second account after the transactions.
+      const accountOneEndingBalance = (await metaCoinInstance.getBalance.call(accountOne)).toNumber();
+      const accountTwoEndingBalance = (await metaCoinInstance.getBalance.call(accountTwo)).toNumber();
 
-  //     assert.notEqual(accountOneEndingBalance, accountOneStartingBalance - amount, "Amount was correctly taken from the sender");
-  //     assert.notEqual(accountTwoEndingBalance, accountTwoStartingBalance + amount, "Amount was correctly sent to the receiver");
+      assert.notEqual(accountOneEndingBalance, accountOneStartingBalance - amount, "Amount was correctly taken from the sender");
+      assert.notEqual(accountTwoEndingBalance, accountTwoStartingBalance + amount, "Amount was correctly sent to the receiver");
 
-  //   }
+    }
 
-  // });
+  });
 });
