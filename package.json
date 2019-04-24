@@ -29,10 +29,10 @@
   "devDependencies": {
     "coveralls": "^3.0.3",
     "ethlint": "^1.2.4",
-    "ganache-cli": "^6.4.2",
+    "ganache-cli": "^6.4.3",
     "solidity-coverage": "^0.5.11",
-    "truffle": "^5.0.12",
-    "truffle-hdwallet-provider": "^1.0.6"
+    "truffle": "^5.0.13",
+    "truffle-hdwallet-provider": "^1.0.7"
   },
   "dependencies": {}
 }
