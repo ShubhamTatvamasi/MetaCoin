@@ -41,3 +41,8 @@ For generating coverage report:
 ```
 npm run coverage
 ```
+
+Rename coverage folder
+```
+mv coverage docs
+```
