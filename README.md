@@ -1,7 +1,7 @@
 # MetaCoin
 
 [![Build Status](https://travis-ci.org/ShubhamTatvamasi/MetaCoin.svg?branch=master)](https://travis-ci.org/ShubhamTatvamasi/MetaCoin)
-[![Coverage Status](https://coveralls.io/repos/github/ShubhamTatvamasi/MetaCoin/badge.svg?branch=master&service=github)](https://coveralls.io/github/ShubhamTatvamasi/MetaCoin?branch=master)
+![Coveralls github](https://img.shields.io/coveralls/github/ShubhamTatvamasi/MetaCoin.svg)
 [![Known Vulnerabilities](https://snyk.io/test/github/ShubhamTatvamasi/MetaCoin/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ShubhamTatvamasi/MetaCoin?targetFile=package.json)
 
 Install ganache for local blockchain development
@@ -46,4 +46,3 @@ Rename coverage folder
 ```
 mv coverage docs
 ```
-
