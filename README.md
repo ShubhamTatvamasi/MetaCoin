@@ -46,3 +46,4 @@ Rename coverage folder
 ```
 mv coverage docs
 ```
+
