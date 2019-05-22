@@ -31,8 +31,8 @@
     "ethlint": "^1.2.4",
     "ganache-cli": "^6.4.3",
     "solidity-coverage": "^0.5.11",
-    "truffle": "^5.0.13",
-    "truffle-hdwallet-provider": "^1.0.7"
+    "truffle": "^5.0.18",
+    "truffle-hdwallet-provider": "^1.0.9"
   },
   "dependencies": {}
 }
