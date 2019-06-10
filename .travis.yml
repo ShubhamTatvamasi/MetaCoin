@@ -8,7 +8,7 @@ install:
   - npm install -g truffle
 
 script:
-  - $(npm bin)/solidity-coverage
+  - ./node_modules/.bin/solidity-coverage
 
 after_script:
   - cat coverage/lcov.info | coveralls
