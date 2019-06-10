@@ -6,6 +6,11 @@ node_js:
 install:
   - npm install 
   - npm install -g truffle
+  - npm install -g ethereumjs-testrpc
+
+before_script:
+  - testrpc > /dev/null &
+  - sleep 5
 
 script:
   - ./node_modules/.bin/solidity-coverage
