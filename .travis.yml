@@ -7,7 +7,7 @@ install:
   - npm install 
 
 script:
-  - npm run coverage
+  - $(npm bin)/solidity-coverage
 
 after_script:
   - cat coverage/lcov.info | coveralls

@@ -8,8 +8,8 @@ module.exports = {
   networks: {
     development: {
       host: "localhost",
-      port: 8545,
-      network_id: "*"
+      network_id: "*",
+      port: 8545
     },
 
     coverage: {
@@ -32,7 +32,7 @@ module.exports = {
 
   compilers: {
     solc: {
-      version: "0.5.8",
+      version: "0.5.9",
       optimizer: {
         enabled: true,
         runs: 200
